@@ -4,12 +4,12 @@ using namespace std;
 
 int CountStrike(string answer, string guess);
 int CountBall(string answer, string guess);
+string GetRandomStrnig(int length);
 
 int main()
 {
-    cout << "Enter a answer: ";
-    string answer;
-    cin >> answer;
+    string answer = GetRandomStrnig(3);
+    cout << "Answer is: " << answer << endl;
 
     while (true)
     {
