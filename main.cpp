@@ -9,9 +9,9 @@ string GetRandomStrnig(int length);
 int main()
 {
     string answer = GetRandomStrnig(3);
-    cout << "Answer is: " << answer << endl;
+    // cout << "Answer is: " << answer << endl;
 
-    while (true)
+    for (int i = 0; i < 5; i++)
     {
         cout << "Enter a guess: ";
         string guess;
@@ -21,9 +21,11 @@ int main()
         if (guess == answer)
         {
             cout << "You Win!" << endl;
-            break;
+            return 0;
         }
 
         cout << "Strikes: " << CountStrike(answer, guess) << ", Balls: " << CountBall(answer, guess) << endl;
     }
+
+    cout << "You Lose!" << endl;
 }

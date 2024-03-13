@@ -14,7 +14,7 @@ string GetRandomStrnig(int length)
     {
         int index = rand() % str.length();
         result += str[index];
-        // str.erase(index, 1);
+        str.erase(index, 1);
     }
 
     return result;
