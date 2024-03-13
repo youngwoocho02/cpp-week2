@@ -15,7 +15,6 @@ int CountStrike(string answer, string guess)
 
     return count;
 }
-
 int CountBall(string answer, string guess)
 {
     int count = 0;
